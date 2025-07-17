@@ -6,7 +6,7 @@
 
 1. 下載本專案：
    ```bash
-   git clone <本專案的 GitHub 連結>
+   git clone https://github.com/ownway22/azure-ai-agent.git
    ```
 2. 進入專案資料夾：
    ```bash
