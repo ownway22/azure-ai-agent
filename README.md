@@ -1,6 +1,7 @@
 # Azure AI Agent
 
 本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階與與 MCP 整合的應用。
+
 Please see the English version at the bottom.
 
 ## 一、專案下載與進入資料夾
@@ -98,7 +99,7 @@ This project demonstrates how to use Azure AI Agent for various AI tasks, includ
 
 ### 1. Download the project:
    ```bash
-   git clone <GitHub link of this project>
+   git clone https://github.com/ownway22/azure-ai-agent.git
    ```
 ### 2. Navigate to the project folder:
    ```bash
