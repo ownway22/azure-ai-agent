@@ -4,11 +4,11 @@
 
 ## 專案下載與進入資料夾
 
-1. 下載本專案：
+### 1. 下載本專案：
    ```bash
    git clone https://github.com/ownway22/azure-ai-agent.git
    ```
-2. 進入專案資料夾：
+### 2. 進入專案資料夾：
    ```bash
    cd azure-ai-agent
    ```
