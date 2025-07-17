@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ### 4. 使用 uv sync 快速建立虛擬環境（可選）
 
-若您已安裝 uv（https://github.com/astral-sh/uv），可用以下方式快速建立與安裝虛擬環境：
+若您已安裝 [uv]（https://github.com/astral-sh/uv），可用以下方式快速建立與安裝虛擬環境：
 
 ```bash
 uv venv .venv
