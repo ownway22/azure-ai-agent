@@ -1,6 +1,6 @@
 # Azure AI Agent
 
-本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階與與 MCP 整合的應用。
+本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階，以及與 MCP 整合的應用。
 
 Please see the English version at the bottom.
 
@@ -187,8 +187,8 @@ After activating the virtual environment, you can follow the steps above to run 
 1. [Quickstart - Create a new Azure AI Foundry Agent Service project](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/quickstart?pivots=programming-language-python-azure)
 2. [azure-sdk-for-python by dargilco](https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-projects_1.0.0b12/sdk/ai/azure-ai-agents/samples/agents_async)
 3. [Getting Started - Build your code-first agent with Azure AI Foundry](https://microsoft.github.io/build-your-first-agent-with-azure-ai-agent-service-workshop/getting-started/)
-4. [AI-Foundry-Agent-MCP by ccoellomsft](https://github.com/ccoellomsft/AI-Foundry-Agent-MCP)
-5. [ai-foundry-agents-samples by eitansela](https://github.com/Azure-Samples/ai-foundry-agents-samples/tree/main)
+4. [AI-Foundry-Agent-MCP by Christian Coello](https://github.com/ccoellomsft/AI-Foundry-Agent-MCP)、[QuickStart to MCP Tools Development with Azure AI Foundry SDK](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/ai-agent-mcp-tools-quickstart-to-mcp-tools-development-with-azure-ai-foundry-sdk/4432464)
+5. [ai-foundry-agents-samples by Eitan Sela](https://github.com/Azure-Samples/ai-foundry-agents-samples/tree/main)、[Build a MCP client using Azure AI Foundry and OpenAI Agents SDK](https://medium.com/@eitansela/build-a-mcp-client-using-azure-ai-foundry-and-openai-agents-sdk-6c8e372f3a6a)
 6. [Office PowerPoint MCP server](https://playbooks.com/mcp/office-powerpoint)
 7. [Excel Data Manager MCP server](https://playbooks.com/mcp/excel-data-manager)
 8. [Azure AI Agents client library for Python - version 1.0.2](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-agents-readme?view=azure-python)
