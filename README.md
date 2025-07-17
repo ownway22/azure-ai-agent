@@ -189,3 +189,7 @@ After activating the virtual environment, you can follow the steps above to run 
 3. [Getting Started - Build your code-first agent with Azure AI Foundry](https://microsoft.github.io/build-your-first-agent-with-azure-ai-agent-service-workshop/getting-started/)
 4. [AI-Foundry-Agent-MCP by ccoellomsft](https://github.com/ccoellomsft/AI-Foundry-Agent-MCP)
 5. [ai-foundry-agents-samples by eitansela](https://github.com/Azure-Samples/ai-foundry-agents-samples/tree/main)
+6. [Office PowerPoint MCP server](https://playbooks.com/mcp/office-powerpoint)
+7. [Excel Data Manager MCP server](https://playbooks.com/mcp/excel-data-manager)
+8. [Azure AI Agents client library for Python - version 1.0.2](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-agents-readme?view=azure-python)
+9. [Azure AI Projects client library for Python - version 1.0.0b12](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python-preview)
