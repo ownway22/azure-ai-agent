@@ -1,8 +1,9 @@
 # Azure AI Agent
 
 本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階與與 MCP 整合的應用。
+Please see the English version at the bottom.
 
-## 專案下載與進入資料夾
+## 一、專案下載與進入資料夾
 
 ### 1. 下載本專案：
    ```bash
@@ -13,7 +14,7 @@
    cd azure-ai-agent
    ```
 
-## 環境建置 方法一
+## 二、環境建置 方法一
 
 ### 1. 建立虛擬環境
 
@@ -47,7 +48,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 環境建置 方法二
+## 二、環境建置 方法二
 
 ### 使用 uv sync 快速建立虛擬環境
 
@@ -61,7 +62,7 @@ uv sync
 
 啟用虛擬環境後即可依前述步驟執行範例。
 
-## 執行範例
+## 三、執行範例
 
 1. 建議依序閱讀與執行下列檔案：
    - 01_ai-agent-basic.ipynb
@@ -89,17 +90,17 @@ uv sync
 
 ---
 
-# Azure AI Agent (English Version)
+# Azure AI Agent
 
 This project demonstrates how to use Azure AI Agent for various AI tasks, including basic, intermediate, advanced, and MCP-integrated applications.
 
 ## Project Download and Navigate to Folder
 
-1. Download the project:
+### 1. Download the project:
    ```bash
    git clone <GitHub link of this project>
    ```
-2. Navigate to the project folder:
+### 2. Navigate to the project folder:
    ```bash
    cd azure-ai-agent
    ```
