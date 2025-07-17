@@ -2,7 +2,7 @@
 
 本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階，以及與 MCP 整合的應用。
 
-Please see the English version at the bottom.
+Please see [the English version](#Azure-AI-Agent) at the bottom.
 
 ## 一、專案下載與進入資料夾
 
