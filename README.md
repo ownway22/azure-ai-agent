@@ -13,7 +13,7 @@
    cd azure-ai-agent
    ```
 
-## 環境建置步驟
+## 環境建置 方法一
 
 ### 1. 建立虛擬環境
 
@@ -47,17 +47,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. 使用 uv sync 快速建立虛擬環境（可選）
+## 環境建置 方法二
 
-若您已安裝 [uv]（https://github.com/astral-sh/uv），可用以下方式快速建立與安裝虛擬環境：
+### 使用 uv sync 快速建立虛擬環境
+
+若您已安裝 uv，可用以下方式快速建立與安裝虛擬環境：
 
 ```bash
-uv venv .venv
 uv sync
 ```
 
-- `uv venv .venv`：建立虛擬環境
-- `uv sync`：根據 requirements.txt 自動安裝所有套件
+- `uv sync`：根據 pyproject.toml 建立虛擬環境，並自動安裝所有套件
 
 啟用虛擬環境後即可依前述步驟執行範例。
 
@@ -85,7 +85,7 @@ uv sync
 ## 其他說明
 
 - 請參考各 .py 檔案內的註解與說明，根據需求調整參數。
-- 若需設定環境變數，請參考 `.env-example` 檔案。
+- 若需設定環境變數，請參考 `.env` 檔案。
 
 ---
 
@@ -93,7 +93,18 @@ uv sync
 
 This project demonstrates how to use Azure AI Agent for various AI tasks, including basic, intermediate, advanced, and MCP-integrated applications.
 
-## Environment Setup Steps
+## Project Download and Navigate to Folder
+
+1. Download the project:
+   ```bash
+   git clone <GitHub link of this project>
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd azure-ai-agent
+   ```
+
+## Environment Setup Method 1
 
 ### 1. Create a Virtual Environment
 
@@ -127,45 +138,45 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. (Optional) Use uv sync for Quick Setup
+## Environment Setup Method 2
 
-If you have uv installed (https://github.com/astral-sh/uv), you can quickly set up and install dependencies with:
+### Use `uv sync` for Quick Virtual Environment Setup
+
+If you have `uv` installed, you can quickly set up and install the virtual environment using:
 
 ```bash
-uv venv .venv
 uv sync
 ```
 
-- `uv venv .venv`: Create the virtual environment
-- `uv sync`: Install all packages from requirements.txt automatically
+- `uv sync`: Creates a virtual environment based on `pyproject.toml` and automatically installs all packages.
 
-After activating the environment, proceed with the following examples.
+After activating the virtual environment, you can follow the steps above to run the examples.
 
-## Example Usage
+## Run Examples
 
-1. It is recommended to read and run the following files in order:
+1. It is recommended to read and execute the following files in order:
    - 01_ai-agent-basic.ipynb
    - 02_ai-agent-intermediate.py
    - 03_ai-agent-advanced.py
    - 04_ai-agent-with-mcp-client.py
    - 05_ai-agent-with-mcp-openAI.py
 
-2. To run the Jupyter Notebook (e.g., 01_ai-agent-basic.ipynb):
+2. To run Jupyter Notebook (e.g., 01_ai-agent-basic.ipynb):
    ```bash
    pip install notebook
    jupyter notebook
    ```
-   Then open 01_ai-agent-basic.ipynb in your browser.
+   Then open `01_ai-agent-basic.ipynb` in your browser.
 
-3. To run Python script examples:
+3. Run Python script examples:
    ```bash
    python 02_ai-agent-intermediate.py
    ```
 
 ## Additional Notes
 
-- Please refer to the comments and instructions in each .py file and adjust parameters as needed.
-- For environment variable settings, refer to the `.env-example` file.
+- Refer to the comments and instructions in each `.py` file to adjust parameters as needed.
+- If environment variables need to be set, refer to the `.env` file.
 
 ---
 
