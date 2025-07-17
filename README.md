@@ -1,4 +1,4 @@
-# Azure AI Agent
+# 🚀 Azure AI Agent
 
 本專案示範如何使用 Azure AI Agent 進行各種 AI 任務，包含基礎、中階、進階，以及與 MCP 整合的應用。
 
