@@ -3,7 +3,7 @@ DESCRIPTION:
     This script implements an AI agent that connects to a Model Context Protocol (MCP) server
     to access custom tools and functions. It creates an Azure AI agent focused on Microsoft information
     that can leverage MCP tools through function calling. The agent communicates with a separate MCP server
-    (04_mcp-server.py) via standard I/O and provides a conversational interface for users to interact with
+    (mcp-server.py) via standard I/O and provides a conversational interface for users to interact with
     Microsoft-related information tools.
 
 USAGE:
@@ -11,7 +11,7 @@ USAGE:
        - PROJECT_ENDPOINT: Your Azure AI Project endpoint URL
        - MODEL_DEPLOYMENT_NAME: The name of your deployed language model
 
-    2. Make sure the MCP server script (04_mcp-server.py) is in the same directory
+    2. Make sure the MCP server script (mcp-server.py) is in the same directory
        as this script, as it will be launched automatically.
 
     3. Install required dependencies:
@@ -58,7 +58,7 @@ model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 async def connect_to_server(exit_stack: AsyncExitStack):
     server_params = StdioServerParameters(
         command="python",
-        args=["04_mcp-server.py"],
+        args=["./mcp-servers/mcp-server.py"],
         env=None
     )
 
