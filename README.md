@@ -231,5 +231,5 @@ After executing all the code, you can see the agent list in the Azure AI Foundry
 14. [Excel Data Manager MCP server](https://playbooks.com/mcp/excel-data-manager)
 
 ### More
-15. [10 Microsoft MCP Servers to Accelerate Your Development Workflow - Microsoft for Developers (2025/07)](https://devblogs.microsoft.com/blog/10-microsoft-mcp-servers-to-accelerate-your-development-workflow)
-16. [AI Repo of the Week: MCP for Beginners | Microsoft Community Hub (2025/05)](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/ai-repo-of-the-week-mcp-for-beginners/4416767)
+15. [AI Repo of the Week: MCP for Beginners | Microsoft Community Hub (2025/05)](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/ai-repo-of-the-week-mcp-for-beginners/4416767)
+16. [10 Microsoft MCP Servers to Accelerate Your Development Workflow - Microsoft for Developers (2025/07)](https://devblogs.microsoft.com/blog/10-microsoft-mcp-servers-to-accelerate-your-development-workflow)
