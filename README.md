@@ -6,12 +6,12 @@ This repository demonstrates how to use Azure AI Agent for various AI tasks, inc
 
 ## 1. 專案下載
 
-### 下載本專案：
+### 1. 下載本專案：
 ```bash
 git clone https://github.com/ownway22/azure-ai-agent.git
 ```
 
-### 進入專案資料夾：
+### 2. 進入專案資料夾：
 ```bash
 cd azure-ai-agent
 ```
@@ -41,7 +41,7 @@ cd azure-ai-agent
    pip install -r requirements.txt
    ```
 
-### 方法二：使用 uv sync
+### 方法二：使用 `uv sync`
 1. 快速建立與安裝虛擬環境：
    ```bash
    uv sync
@@ -60,7 +60,7 @@ cd azure-ai-agent
      source .venv/bin/activate
      ```
 
-## 3. 修改 .env 中的環境變數
+## 3. 修改環境變數
 
 請到 [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) 複製您 AI project 中相關的環境變數，並將其填入 `.env` 檔案中。
 ```bash
@@ -111,12 +111,12 @@ This repository demonstrates how to use Azure AI Agent for various AI tasks, inc
 
 ## 1. Project Download
 
-### Download the repository:
+### 1. Download the repository:
 ```bash
 git clone https://github.com/ownway22/azure-ai-agent.git
 ```
 
-### Navigate to the project folder:
+### 2. Navigate to the project folder:
 ```bash
 cd azure-ai-agent
 ```
@@ -165,7 +165,7 @@ cd azure-ai-agent
      source .venv/bin/activate
      ```
 
-## 3. Modify Environment Variables in `.env`
+## 3. Modify Environment Variables
 
 Go to the [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) to copy the relevant environment variables for your AI project and add them to the `.env` file:
 * PROJECT_ENDPOINT=""
