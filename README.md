@@ -84,14 +84,14 @@ AZURE_OPENAI_API_VERSION="2025-01-01-preview"
 5. `05_ai-agent-mcp-intermediate.py`
 6. `06_ai-agent-mcp-advanced.py`
 
-執行 Jupyter Notebook 範例：
+#### 執行 Jupyter Notebook 範例：
 ```bash
 pip install notebook
 jupyter notebook
 ```
 然後在瀏覽器中開啟上述的 `.ipynb` 檔案。
 
-執行 Python 範例：
+#### 執行 Python 範例：
 ```bash
 python 02_ai-agent-intermediate.py
 python 03_ai-agent-advanced.py
@@ -191,14 +191,14 @@ Execute the following files in order:
 5. `05_ai-agent-mcp-intermediate.py`
 6. `06_ai-agent-mcp-advanced.py`
 
-Run Jupyter Notebook examples:
+#### Run Jupyter Notebook examples:
 ```bash
 pip install notebook
 jupyter notebook
 ```
 Then open the `.ipynb` files in your browser.
 
-Run Python script examples:
+#### Run Python script examples:
 ```bash
 python 02_ai-agent-intermediate.py
 python 03_ai-agent-advanced.py
