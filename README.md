@@ -231,7 +231,7 @@ This screen displays the list of successfully created agents, including their na
 10. [AI-Foundry-Agent-MCP by Christian Coello (2025/07)](https://github.com/ccoellomsft/AI-Foundry-Agent-MCP)
 
 #### 06_ai-agent-mcp-advanced.py
-11. [Build a MCP client using Azure AI Foundry and OpenAI Agents SDK (2025/04/27)](https://medium.com/@eitansela/build-a-mcp-client-using-azure-ai-foundry-and-openai-agents-sdk-6c8e372f3a6a)
+11. [Build a MCP client using Azure AI Foundry and OpenAI Agents SDK (2025/04)](https://medium.com/@eitansela/build-a-mcp-client-using-azure-ai-foundry-and-openai-agents-sdk-6c8e372f3a6a)
 12. [ai-foundry-agents-samples by Eitan Sela (2025/07)](https://github.com/Azure-Samples/ai-foundry-agents-samples/tree/main)
 13. [Office PowerPoint MCP server](https://playbooks.com/mcp/office-powerpoint)
 14. [Excel Data Manager MCP server](https://playbooks.com/mcp/excel-data-manager)
