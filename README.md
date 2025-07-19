@@ -1,6 +1,6 @@
 # 🚀 Azure AI Agent with MCP Tools
 
-本儲存庫示範如何使用 Azure AI Agent 執行各種 AI 任務，包括基礎、中階、進階及與 MCP 整合的應用，並提供 Jupyter Notebook 及 Python 腳本範例。
+本案示範如何使用 Azure AI Agent 執行各種 AI 任務，包括基礎、中階、進階，以及與 MCP 整合的應用，並提供 Jupyter Notebook 及 Python 腳本範例。
 
 This repository demonstrates how to use Azure AI Agent for various AI tasks, including basic, intermediate, advanced, and MCP-integrated applications. It provides examples in both Jupyter Notebooks and Python scripts. Please see [the user guide](#The-User-Guide) at the bottom.
 
@@ -105,6 +105,7 @@ python 06_ai-agent-mcp-advanced.py
 
 ---
 ## The User Guide
+This repository demonstrates how to use Azure AI Agent for various AI tasks, including basic, intermediate, advanced, and MCP-integrated applications. It provides examples in both Jupyter Notebooks and Python scripts.
 
 ## 1. Project Download
 
