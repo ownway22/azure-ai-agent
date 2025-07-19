@@ -64,12 +64,14 @@ cd azure-ai-agent
 
 請到 [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) 複製您 AI project 中相關的環境變數，並將其填入 `.env` 檔案中。
 ```bash
-PROJECT_ENDPOINT=""
-API_KEY=""
-MODEL_DEPLOYMENT_NAME=""
-AZURE_OPENAI_ENDPOINT=""
-AZURE_OPENAI_API_KEY=""
-AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=""
+PROJECT_ENDPOINT="https://xxx.services.ai.azure.com/api/projects/xxx"
+API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAACxxx"
+MODEL_DEPLOYMENT_NAME="gpt-4o"
+
+AZURE_OPENAI_ENDPOINT="https://xxx.openai.azure.com/"
+AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABACxxx"
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
+AZURE_OPENAI_API_VERSION="2025-01-01-preview"
 ```
 
 ## 4. 開始執行範例
@@ -168,12 +170,16 @@ cd azure-ai-agent
 ## 3. Modify Environment Variables
 
 Go to the [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) to copy the relevant environment variables for your AI project and add them to the `.env` file:
-* PROJECT_ENDPOINT=""
-* API_KEY=""
-* MODEL_DEPLOYMENT_NAME=""
-* AZURE_OPENAI_ENDPOINT=""
-* AZURE_OPENAI_API_KEY=""
-* AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=""
+ ```bash
+PROJECT_ENDPOINT="https://xxx.services.ai.azure.com/api/projects/xxx"
+API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAACxxx"
+MODEL_DEPLOYMENT_NAME="gpt-4o"
+
+AZURE_OPENAI_ENDPOINT="https://xxx.openai.azure.com/"
+AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABACxxx"
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
+AZURE_OPENAI_API_VERSION="2025-01-01-preview"
+```
 
 ## 4. Run Examples
 
