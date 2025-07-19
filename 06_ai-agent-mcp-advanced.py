@@ -1,28 +1,16 @@
+# Standard Library Imports
 """
 DESCRIPTION:
-    This script implements an AI assistant using Azure OpenAI services with Model Context Protocol (MCP) servers.
-    It integrates PowerPoint and Excel MCP servers to enable the AI assistant to create and manipulate
-    PowerPoint presentations and Excel spreadsheets based on user requests. The assistant can interact
-    with the filesystem, read files, create and edit PowerPoint presentations, and work with Excel data.
+    This script demonstrates an advanced Azure AI Agent that connects to multiple MCP servers for tool-augmented conversations. The agent can generate and edit PowerPoint presentations and Excel spreadsheets using natural language instructions.
 
 USAGE:
-    1. Ensure you have the following environment variables set in a .env file:
-       - AZURE_OPENAI_API_KEY: Your Azure OpenAI API key
-       - AZURE_OPENAI_API_VERSION: API version (e.g., "2023-05-15")
-       - AZURE_OPENAI_ENDPOINT: Your Azure OpenAI endpoint URL
-       - AZURE_OPENAI_CHAT_DEPLOYMENT_NAME: Your deployed model name
-
-    2. Install required dependencies:
-       - Python packages: openai, python-dotenv, and the agents library
-       - Node.js and npx must be installed for MCP servers
-
-    3. Run the script:
-       python azure-ai-agent-with-mcp.py
-
-    4. Interact with the assistant through the command line interface
-       Type '離開' or 'exit' to end the conversation
+    1. Set the required environment variables (see README.md).
+    2. Install all dependencies from requirements.txt.
+    3. Ensure the MCP server code is available and npx is installed.
+    4. Run the script:
+        python 06_ai-agent-mcp-advanced.py
+    5. Enter your requests as prompted. Type 'exit' or '離開' to end the conversation.
 """
-
 # Standard Library Imports
 import asyncio   # For asynchronous programming
 import logging   # For logging events and debugging

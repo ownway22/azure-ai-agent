@@ -1,29 +1,16 @@
+# Standard Library Imports
 """
 DESCRIPTION:
-    This script implements an AI agent that connects to a Model Context Protocol (MCP) server
-    to access custom tools and functions. It creates an Azure AI agent focused on Microsoft information
-    that can leverage MCP tools through function calling. The agent communicates with a separate MCP server
-    (mcp-server.py) via standard I/O and provides a conversational interface for users to interact with
-    Microsoft-related information tools.
+    This script demonstrates how to connect an Azure AI Agent to a custom MCP server using the Foundry SDK. The agent can call server-side tools via function calling and interact with the user in a chat loop.
 
 USAGE:
-    1. Ensure you have the following environment variables set in a .env file:
-       - PROJECT_ENDPOINT: Your Azure AI Project endpoint URL
-       - MODEL_DEPLOYMENT_NAME: The name of your deployed language model
-
-    2. Make sure the MCP server script (mcp-server.py) is in the same directory
-       as this script, as it will be launched automatically.
-
-    3. Install required dependencies:
-       - Python packages: azure-ai-agents, azure-identity, python-dotenv, mcp-client
-
+    1. Set the required environment variables (see README.md).
+    2. Install all dependencies from requirements.txt.
+    3. Make sure the MCP server code is available in the mcp-servers directory.
     4. Run the script:
-       python 04_ai-agent-with-mcp-client.py
-
-    5. Interact with the agent through the command line interface
-       Type 'quit' to end the conversation
+        python 05_ai-agent-mcp-intermediate.py
+    5. Enter your prompts as instructed. Type 'quit' to exit the chat.
 """
-
 # Standard Library Imports
 import asyncio        # For asynchronous programming
 import json           # For working with JSON data
@@ -109,7 +96,7 @@ async def chat_loop(session):
     # Create the agent
     agent = agents_client.create_agent(
      model=model_deployment,
-     name="microsoft-agent",
+     name="05_MSFT agent",
      instructions="""
      You are an expert on Microsoft Information
      """,

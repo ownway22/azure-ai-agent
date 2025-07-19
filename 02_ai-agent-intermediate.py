@@ -1,26 +1,14 @@
-
 """
 DESCRIPTION:
-    This script implements a simple conversational AI agent using Azure AI Services.
-    It creates an Azure AI agent that can engage in conversation with the user through
-    a command-line interface. The agent is configured to be friendly and tell jokes,
-    demonstrating the basic capabilities of the Azure AI Agents service.
+    This script demonstrates how to create and interact with an Azure AI Agent for conversational purposes. The agent can chat, tell jokes, and respond to user input in a simple command-line interface.
 
 USAGE:
-    1. Ensure you have the following environment variables set in a .env file:
-       - PROJECT_ENDPOINT: Your Azure AI Project endpoint URL
-       - MODEL_DEPLOYMENT_NAME: The name of your deployed language model
-
-    2. Install required dependencies:
-       - Python packages: azure-ai-projects, azure-ai-agents, azure-identity, python-dotenv
-
+    1. Set the required environment variables (see README.md).
+    2. Install all dependencies from requirements.txt.
     3. Run the script:
-       python azure-ai-agent-basic.py
-
-    4. Interact with the agent through the command line interface
-       Type '離開' or 'exit' to end the conversation
+        python 02_ai-agent-intermediate.py
+    4. Enter your messages as prompted. Type 'exit' or '離開' to end the conversation.
 """
-
 import asyncio
 import os
 
@@ -48,7 +36,7 @@ async def main() -> None:
 
         agent = await agents_client.create_agent(
             model=os.environ["MODEL_DEPLOYMENT_NAME"],
-            name="sample-agent",
+            name="02 App agent",
             instructions="You are a helpful assistant that tells jokes and can have a conversation with the user.",
         )
         print(f"Created agent, agent ID: {agent.id}")

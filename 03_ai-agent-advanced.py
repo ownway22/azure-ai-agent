@@ -1,3 +1,14 @@
+"""
+DESCRIPTION:
+    This script demonstrates an advanced Azure AI Agent that can answer sales-related questions using data from a SQLite database, PDF datasheets, and code interpretation tools. It integrates Azure AI Agents, vector search, and function calling to provide interactive, data-driven responses.
+
+USAGE:
+    1. Ensure all required environment variables are set (see README.md).
+    2. Install dependencies from requirements.txt.
+    3. Run the script:
+        python 03_ai-agent-advanced.py
+    4. Follow the prompt to enter your queries. Type 'exit' or 'save' to finish.
+"""
 import asyncio
 import logging
 import os
@@ -15,19 +26,19 @@ from azure.ai.agents.models import (
 from azure.identity.aio import DefaultAzureCredential
 from dotenv import load_dotenv
 
-from sales_data import SalesData
-from stream_event_handler import StreamEventHandler
-from terminal_colors import TerminalColors as tc
-from utilities import Utilities
+from files.sales_data import SalesData
+from files.stream_event_handler import StreamEventHandler
+from files.terminal_colors import TerminalColors as tc
+from files.utilities import Utilities
 
 logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger(__name__)
 
 load_dotenv()
 
-AGENT_NAME = "Contoso Sales Agent"
-TENTS_DATA_SHEET_FILE = "datasheet/contoso-tents-datasheet.pdf"
-FONTS_ZIP = "fonts/fonts.zip"
+AGENT_NAME = "03_Contoso sales agent"
+TENTS_DATA_SHEET_FILE = "/datasheet/contoso-tents-datasheet.pdf"
+FONTS_ZIP = "/fonts/fonts.zip"
 API_DEPLOYMENT_NAME = os.getenv("MODEL_DEPLOYMENT_NAME")
 PROJECT_ENDPOINT = os.environ["PROJECT_ENDPOINT"]
 AZURE_BING_CONNECTION_ID = os.environ["AZURE_BING_CONNECTION_ID"]
@@ -56,11 +67,11 @@ functions = AsyncFunctionTool(
     }
 )
 
-INSTRUCTIONS_FILE = "instructions/function_calling.txt"
-INSTRUCTIONS_FILE = "instructions/file_search.txt"
-INSTRUCTIONS_FILE = "instructions/code_interpreter.txt"
-# INSTRUCTIONS_FILE = "instructions/bing_grounding.txt"
-# INSTRUCTIONS_FILE = "instructions/code_interpreter_multilingual.txt"
+INSTRUCTIONS_FILE = "/instructions/function_calling.txt"
+INSTRUCTIONS_FILE = "/instructions/file_search.txt"
+INSTRUCTIONS_FILE = "/instructions/code_interpreter.txt"
+# INSTRUCTIONS_FILE = "/instructions/bing_grounding.txt"
+# INSTRUCTIONS_FILE = "/instructions/code_interpreter_multilingual.txt"
 
 
 async def add_agent_tools() -> None:
@@ -96,7 +107,6 @@ async def add_agent_tools() -> None:
 
 async def initialize() -> tuple[Agent, AgentThread]:
     """Initialize the agent with the sales data schema and instructions."""
-
     if not INSTRUCTIONS_FILE:
         return None, None
 
@@ -106,10 +116,13 @@ async def initialize() -> tuple[Agent, AgentThread]:
     database_schema_string = await sales_data.get_database_info()
 
     try:
+        print("Loading instructions from file...")
         instructions = utilities.load_instructions(INSTRUCTIONS_FILE)
         # Replace the placeholder with the database schema string
         instructions = instructions.replace(
             "{database_schema_string}", database_schema_string)
+        
+        print(instructions)
 
         if font_file_info:
             # Replace the placeholder with the font file ID
