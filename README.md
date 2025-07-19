@@ -91,7 +91,7 @@ jupyter notebook
 ```
 然後在瀏覽器中開啟上述的 `.ipynb` 檔案。
 
-#### 執行 Python 腳本範例：
+#### 執行 Python 範例：
 ```bash
 python 02_ai-agent-intermediate.py
 python 03_ai-agent-advanced.py
@@ -213,6 +213,8 @@ After executing all the code, you can see the agent list in the Azure AI Foundry
 ![complete](files/complete.png)
 
 This screen displays the list of successfully created agents, including their names, IDs, model types, creation times, and other information.
+
+---
 
 # Reference
 
