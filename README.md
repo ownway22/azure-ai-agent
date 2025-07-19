@@ -63,12 +63,14 @@ cd azure-ai-agent
 ## 3. 修改 .env 中的環境變數
 
 請到 [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) 複製您 AI project 中相關的環境變數，並將其填入 `.env` 檔案中。
+```bash
 * PROJECT_ENDPOINT=""
 * API_KEY=""
 * MODEL_DEPLOYMENT_NAME=""
 * AZURE_OPENAI_ENDPOINT=""
 * AZURE_OPENAI_API_KEY=""
 * AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=""
+```
 
 ## 4. 開始執行範例
 
