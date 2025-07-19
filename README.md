@@ -6,19 +6,19 @@ This repository demonstrates how to use Azure AI Agent for various AI tasks, inc
 
 ## 1. 專案下載
 
-#### 1. 下載本專案：
+#### 下載本專案：
 ```bash
 git clone https://github.com/ownway22/azure-ai-agent.git
 ```
 
-#### 2. 進入專案資料夾：
+#### 進入專案資料夾：
 ```bash
 cd azure-ai-agent
 ```
 
 ## 2. 環境建置
 
-### 方法一：典型方式
+#### 方法一：典型方式
 1. 建立虛擬環境：
    ```bash
    python -m venv .venv
@@ -41,7 +41,7 @@ cd azure-ai-agent
    pip install -r requirements.txt
    ```
 
-### 方法二：使用 `uv sync`
+#### 方法二：使用 `uv sync`
 1. 快速建立與安裝虛擬環境：
    ```bash
    uv sync
