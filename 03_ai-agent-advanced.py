@@ -1,6 +1,10 @@
 """
 DESCRIPTION:
-    This script demonstrates an advanced Azure AI Agent that can answer sales-related questions using data from a SQLite database, PDF datasheets, and code interpretation tools. It integrates Azure AI Agents, vector search, and function calling to provide interactive, data-driven responses.
+    This script demonstrates an advanced Azure AI Agent that can answer sales-related questions using 
+    data from a SQLite database, PDF datasheets, and code interpretation tools. It integrates Azure AI Agents, 
+    vector search, and function calling to provide interactive, data-driven responses. Specifically, the agent will 
+    use the Contoso sales data schema to answer questions and also use the Contoso tents datasheet to answer 
+    questions about the tents. Besides, setting the temperature and top_p low can cause more deterministic results.
 
 USAGE:
     1. Ensure all required environment variables are set (see README.md).
@@ -39,13 +43,11 @@ load_dotenv()
 AGENT_NAME = "03_Contoso sales agent"
 TENTS_DATA_SHEET_FILE = "/datasheet/contoso-tents-datasheet.pdf"
 FONTS_ZIP = "/fonts/fonts.zip"
-API_DEPLOYMENT_NAME = os.getenv("MODEL_DEPLOYMENT_NAME")
+API_DEPLOYMENT_NAME = os.environ["MODEL_DEPLOYMENT_NAME"]
 PROJECT_ENDPOINT = os.environ["PROJECT_ENDPOINT"]
 AZURE_BING_CONNECTION_ID = os.environ["AZURE_BING_CONNECTION_ID"]
 MAX_COMPLETION_TOKENS = 10240
 MAX_PROMPT_TOKENS = 20480
-# The LLM is used to generate the SQL queries.
-# Set the temperature and top_p low to get more deterministic results.
 TEMPERATURE = 0.1
 TOP_P = 0.1
 INSTRUCTIONS_FILE = None

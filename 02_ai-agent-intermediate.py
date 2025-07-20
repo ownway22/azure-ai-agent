@@ -64,14 +64,9 @@ async def main() -> None:
             if user_input.lower() in ["離開", "退出", "exit", "quit"]:
                 print("Ending conversation...")
                 break
-                
-            await send_message_and_display_response(
-                agents_client,
-                agent.id,
-                thread_id,
-                user_input
-            )
-        
+
+            await send_message_and_display_response(agents_client, agent.id, thread_id, user_input)
+
         # Clean up
         # await agents_client.delete_agent(agent.id)
         # print(f"Deleted agent {agent.id!r}")
@@ -80,18 +75,11 @@ async def main() -> None:
 async def send_message_and_display_response(agents_client, agent_id, thread_id, message_content):
     """Send a message to the agent and display its response."""
     # Add the user message to the thread
-    await agents_client.messages.create(
-        thread_id=thread_id,
-        role="user",
-        content=message_content
-    )
-    
+    await agents_client.messages.create(thread_id=thread_id, role="user", content=message_content)
+
     # Create and process a run
-    run = await agents_client.runs.create(
-        thread_id=thread_id,
-        agent_id=agent_id
-    )
-    
+    run = await agents_client.runs.create(thread_id=thread_id, agent_id=agent_id)
+
     # Poll until the run completes
     while run.status not in ["completed", "failed", "cancelled"]:
         await asyncio.sleep(1)
@@ -102,12 +90,8 @@ async def send_message_and_display_response(agents_client, agent_id, thread_id, 
         return
     
     # Get the latest assistant message
-    messages = agents_client.messages.list(
-        thread_id=thread_id,
-        order=ListSortOrder.DESCENDING,
-        limit=1
-    )
-    
+    messages = agents_client.messages.list(thread_id=thread_id, order=ListSortOrder.DESCENDING, limit=1)
+
     async for msg in messages:
         if msg.role == "assistant":
             last_part = msg.content[-1]
