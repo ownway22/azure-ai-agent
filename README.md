@@ -64,14 +64,15 @@ cd azure-ai-agent
 
 請到 [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) 複製您 AI project 中相關的環境變數，並將其填入 `.env` 檔案中。
 ```bash
-PROJECT_ENDPOINT="https://xxx.services.ai.azure.com/api/projects/xxx"
-API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAACxxx"
+PROJECT_ENDPOINT="https://*****.services.ai.azure.com/api/projects/*****"
+API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAA*****"
 MODEL_DEPLOYMENT_NAME="gpt-4o"
 
-AZURE_OPENAI_ENDPOINT="https://xxx.openai.azure.com/"
-AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABACxxx"
+AZURE_OPENAI_ENDPOINT="https://openai-ai-workshop.openai.azure.com/"
+AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABAC*****"
 AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
 AZURE_OPENAI_API_VERSION="2025-01-01-preview"
+AZURE_BING_CONNECTION_ID="*****"
 ```
 
 ## 4. Azure CLI 登入 (az login)
@@ -188,14 +189,15 @@ cd azure-ai-agent
 
 Go to the [Azure AI Foundry Project](https://learn.microsoft.com/en-us/azure/ai-foundry/) to copy the relevant environment variables for your AI project and add them to the `.env` file:
  ```bash
-PROJECT_ENDPOINT="https://xxx.services.ai.azure.com/api/projects/xxx"
-API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAACxxx"
+PROJECT_ENDPOINT="https://*****.services.ai.azure.com/api/projects/*****"
+API_KEY="86CBilkUxBKM3s8VYa7blR40bgIkDGhYnDysexp4kSt6r1qiMmPmJQQJ99BGACHYHv6XJ3w3AAAAA*****"
 MODEL_DEPLOYMENT_NAME="gpt-4o"
 
-AZURE_OPENAI_ENDPOINT="https://xxx.openai.azure.com/"
-AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABACxxx"
+AZURE_OPENAI_ENDPOINT="https://openai-ai-workshop.openai.azure.com/"
+AZURE_OPENAI_API_KEY="AYj128C1av4Y9MLl01p5k6tIRY6pYRWOPjHSHYPru9K7KNKKamiPJQQJ99BFACHYHv6XJ3w3AAABAC*****"
 AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
 AZURE_OPENAI_API_VERSION="2025-01-01-preview"
+AZURE_BING_CONNECTION_ID="*****"
 ```
 
 ## 4. Azure CLI Login (az login)
