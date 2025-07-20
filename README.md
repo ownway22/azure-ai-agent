@@ -74,7 +74,24 @@ AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
 AZURE_OPENAI_API_VERSION="2025-01-01-preview"
 ```
 
-## 4. 開始執行範例
+## 4. Azure CLI 登入 (az login)
+
+在執行範例前，請先安裝並登入 Azure CLI：
+
+1. 若尚未安裝 Azure CLI，請參考官方說明：[如何安裝 Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+2. 登入 Azure 帳號：
+   - Windows (PowerShell 或 CMD)：
+     ```powershell
+     az login
+     ```
+   - macOS / Linux (Terminal)：
+     ```bash
+     az login
+     ```
+
+執行後會自動開啟瀏覽器進行帳號驗證，登入成功即可繼續後續步驟。
+
+## 5. 開始執行範例
 
 依序執行以下檔案：
 1. `01_ai-agent-basic.ipynb`
@@ -99,7 +116,7 @@ python 05_ai-agent-mcp-intermediate.py
 python 06_ai-agent-mcp-advanced.py
 ```
 
-## 5. 完成後的結果
+## 6. 完成後的結果
 
 當所有程式碼執行完成後，您可以在 Azure AI Foundry portal 的 agent 清單中看到如下畫面：
 
@@ -181,7 +198,24 @@ AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o"
 AZURE_OPENAI_API_VERSION="2025-01-01-preview"
 ```
 
-## 4. Run Examples
+## 4. Azure CLI Login (az login)
+
+Before running the examples, install and log in to the Azure CLI:
+
+1. If you haven't installed the Azure CLI yet, follow the official guide: [Install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+2. Log in to your Azure account:
+   - Windows (PowerShell or CMD):
+     ```powershell
+     az login
+     ```
+   - macOS / Linux (Terminal):
+     ```bash
+     az login
+     ```
+
+This will automatically open a browser for account verification. Once logged in, you can proceed to the next steps.
+
+## 5. Run Examples
 
 Execute the following files in order:
 1. `01_ai-agent-basic.ipynb`
@@ -206,7 +240,7 @@ python 05_ai-agent-mcp-intermediate.py
 python 06_ai-agent-mcp-advanced.py
 ```
 
-## 5. Results After Completion
+## 6. Results After Completion
 
 After executing all the code, you can see the agent list in the Azure AI Foundry portal as shown below:
 
